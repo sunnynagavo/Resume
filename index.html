@@ -12,45 +12,51 @@
             margin: 0 auto;
             padding: 40px 20px;
             color: #24292e;
-            position: relative;
+            background: #fff;
         }
-        .header {
-            position: relative;
-            margin-bottom: 1em;
-        }
-        .profile-pic {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5em;
+            gap: 2em;
         }
         .main-content {
-            padding-right: 170px;
+            flex: 1 1 auto;
+            min-width: 0;
         }
         .main-content h1 {
             margin: 0;
             padding: 0;
             border: none;
             font-size: 2.5em;
+            font-weight: 700;
+            color: #24292e;
         }
         .main-content h2 {
-            margin: 0;
-            padding: 0.5em 0 0 0;
+            margin: 0.3em 0 0 0;
+            padding: 0;
             border: none;
             color: #586069;
             font-size: 1.5em;
+            font-weight: 400;
         }
         .title-separator {
             height: 2px;
             background: #0366d6;
-            margin: 0.5em 0 1em 0;
+            margin: 0.7em 0 1em 0;
             width: 100%;
+            border: none;
         }
-        h1, h2, h3 { 
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            flex-shrink: 0;
+        }
+        h3 {
             color: #24292e;
             border-bottom: 1px solid #eaecef;
             padding-bottom: 0.3em;
@@ -72,18 +78,16 @@
             padding-left: 20px;
         }
         @media (max-width: 768px) {
-            .profile-pic {
-                position: relative;
-                margin: 0 auto 1em auto;
-                display: block;
-                top: auto;
-                right: auto;
-            }
-            .main-content {
-                padding-right: 0;
+            .header-flex {
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
             }
             .main-content h1, .main-content h2 {
                 text-align: center;
+            }
+            .profile-pic {
+                margin-top: 1em;
             }
         }
     </style>
@@ -97,38 +101,48 @@
         fetch('README.md')
             .then(response => response.text())
             .then(text => {
-                // Split the content at the first heading
-                const parts = text.split('\n');
-                const firstHeading = parts.shift(); // Remove and store first heading
-                const secondHeading = parts.shift(); // Get the second heading
-                const restContent = parts.join('\n');
-                
-                // Create the header with profile picture
+                // Get the first two headings (name and title)
+                const lines = text.split('\n');
+                let h1 = '', h2 = '', rest = [];
+                let foundH1 = false, foundH2 = false;
+                for (let i = 0; i < lines.length; i++) {
+                    if (!foundH1 && lines[i].startsWith('# ')) {
+                        h1 = lines[i];
+                        foundH1 = true;
+                        continue;
+                    }
+                    if (foundH1 && !foundH2 && lines[i].startsWith('## ')) {
+                        h2 = lines[i];
+                        foundH2 = true;
+                        continue;
+                    }
+                    if (foundH1 && foundH2) {
+                        rest = lines.slice(i);
+                        break;
+                    }
+                }
+                // Create the header with flex layout
                 const header = document.createElement('div');
-                header.className = 'header';
-                
+                header.className = 'header-flex';
+
                 const mainContent = document.createElement('div');
                 mainContent.className = 'main-content';
-                mainContent.innerHTML = marked.parse(firstHeading + '\n' + secondHeading);
-                
-                // Add separator line
-                const separator = document.createElement('div');
-                separator.className = 'title-separator';
-                mainContent.appendChild(separator);
-                
+                mainContent.innerHTML = marked.parse(h1 + '\n' + h2) +
+                    '<div class="title-separator"></div>';
+
                 const img = document.createElement('img');
                 img.src = 'assets/profilepic.jpeg';
                 img.className = 'profile-pic';
                 img.alt = 'Naga Santhosh Reddy Vootukuri';
-                
+
                 header.appendChild(mainContent);
                 header.appendChild(img);
-                
-                // Render the content
+
+                // Render the header and rest of the content
                 const contentDiv = document.getElementById('content');
                 contentDiv.appendChild(header);
-                contentDiv.innerHTML += marked.parse(restContent);
+                contentDiv.innerHTML += marked.parse(rest.join('\n'));
             });
     </script>
 </body>
-</html> 
+</html>
