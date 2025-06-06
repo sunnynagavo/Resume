@@ -2,17 +2,12 @@ title: Naga Santhosh Reddy Vootukuri
 description: Principal Software Engineering Manager | Microsoft Azure SQL Engineering
 baseurl: "/Resume"
 url: "https://sunnynagavo.github.io"
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
-remote_theme: sproogen/modern-resume-theme@v2.0.10
-sass:
-  style: compressed
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
 
 # Theme Config
 layout: default
