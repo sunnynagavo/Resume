@@ -131,12 +131,12 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 ## **📖 BOOKS & TECHNICAL EDITING**
 
 ### **Primary Author**
-📕 **"Exploring Azure Container Apps: Scaling Modern and Cloud-Native Applications"** | *Apress* (2024)  
+📕 **"Exploring Azure Container Apps: Scaling Modern and Cloud-Native Applications"** | *Apress* (2025)  
 📗 **"Building Cloud-Native Applications with .NET Aspire"** | *BPB Publications* (Expected April 2025)
 
 ### **Technical Reviewer & Editor**
 📘 **"Parallel Programming with C# and .NET: Fundamentals of Concurrency and Asynchrony"** | *Vaskaran Sarcar, Apress*  
-📚 **8+ additional books** served as Technical Editor with front matter credits and certificates
+📚 **8+ Technical/Programming books (Apress, Packt, Manning)** served as Technical Editor with front matter credits and certificates
 
 ---
 
