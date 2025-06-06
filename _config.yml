@@ -5,6 +5,7 @@ url: "https://sunnynagavo.github.io"
 
 # Build settings
 markdown: kramdown
+theme: jekyll-theme-minimal
 remote_theme: sproogen/modern-resume-theme@v2.0.10
 sass:
   style: compressed
