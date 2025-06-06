@@ -4,7 +4,7 @@ layout: resume
 
 ## About Me
 
-Accomplished Principal Software Engineering Manager with **17+ years** of progressive leadership experience at Microsoft, specializing in Azure SQL Database technologies, cloud computing, and artificial intelligence. Demonstrated expertise in leading cross-functional teams, driving product innovation, and delivering scalable solutions to **millions of users worldwide**. Distinguished thought leader with **7 published research papers**, **27 technical articles**, and recognition as a **top cloud computing expert**. Active mentor, conference speaker, and technical reviewer contributing to the advancement of software engineering practices and AI applications.
+Accomplished Principal Software Engineering Manager with **17+ years** of progressive leadership experience at Microsoft, specializing in Azure SQL Database technologies, cloud computing, and artificial intelligence. Demonstrated expertise in leading cross-functional teams, driving product innovation, and delivering scalable solutions to **millions of users worldwide**. Distinguished thought leader with **7 published research papers**, **27 technical articles**, and recognition as a **top cloud computing expert**. Active mentor, conference speaker, and technical reviewer contributing to the advancement of software engineering practices and AI applications. Recently featured in [Business Insider](https://www.businessinsider.com/microsoft-manager-ai-reduces-busywork-not-daily-workload-2024-10) discussing AI's impact on engineering management and productivity.
 
 ## Experience
 
@@ -90,4 +90,17 @@ Sreenidhi Institute of Science and Technology
 - Microsoft Certified Technology Specialist (MCTS) - WPF 4 & C#
 - Microsoft Azure 70-532 Certification
 - Cognizant Certified Professional - Information Media and Entertainment Vertical
-- Cognizant Certified Professional - C# with Windows Application Development 
+- Cognizant Certified Professional - C# with Windows Application Development
+
+## Media Coverage & Thought Leadership
+
+### Featured Coverage
+- **Business Insider** (October 2024) - ["I'm a Microsoft manager. AI reduced my time spent on coding by 70%, but that doesn't mean I work any less overall"](https://www.businessinsider.com/microsoft-manager-ai-reduces-busywork-not-daily-workload-2024-10)
+  - Discussed how AI tools have transformed software development workflows
+  - Shared insights on balancing AI automation with increased productivity demands
+  - Featured perspective on the future of engineering management in the AI era
+
+### Speaking Engagements
+- Software Architecture Conference (August 2025) - Invited Speaker
+- IEEE AI Innovation Summit - Technical Lightning Committee Chair
+- DZone Virtual Roundtables - Panel Expert on Database Systems & Kubernetes 
