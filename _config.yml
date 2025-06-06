@@ -1,0 +1,64 @@
+title: "Naga Santhosh Reddy Vootukuri"
+description: "Principal Software Engineering Manager | Microsoft Azure SQL Engineering"
+url: "https://sunnynagavo.github.io"
+baseurl: "/Resume"
+
+# Theme settings
+remote_theme: sproogen/modern-resume-theme
+version: 2
+
+# Personal info
+name: Naga Santhosh Reddy Vootukuri
+email: sunnycoder5@gmail.com
+phone: +1 (XXX) XXX-XXXX
+website: https://dzone.com/authors/sunnynagavo
+darkmode: true
+profile_image: assets/profile.jpg
+
+# Social links
+linkedin_username: naga-santhosh-reddy-vootukuri-5a67a133
+github_username: sunnynagavo
+sessionize_username: naga-santhosh-reddy-vootukuri
+google_scholar: dlQOtWYAAAAJ
+dzone_url: https://dzone.com/authors/sunnynagavo
+adplist_url: https://adplist.org/mentors/sunny
+
+# Additional links
+additional_links:
+- title: Business Insider
+  icon: fas fa-newspaper
+  url: https://www.businessinsider.com/microsoft-manager-explains-how-ai-changed-his-job-2024
+- title: Speaking
+  icon: fas fa-microphone
+  url: https://sessionize.com/naga-santhosh-reddy-vootukuri
+- title: Publications
+  icon: fas fa-book
+  url: https://scholar.google.com/citations?user=dlQOtWYAAAAJ
+- title: Mentoring
+  icon: fas fa-users
+  url: https://adplist.org/mentors/sunny
+
+# Google Analytics
+google_analytics: UA-000000-0
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+
+# Theme customization
+colors:
+  primary: "#205081"
+  secondary: "#1a4d2e"
+  accent: "#0366d6"
+  background: "#fcfcfc"
+  text: "#24292e"
+
+# Additional settings
+show_downloads: true
+enable_dark_mode: true
+enable_contact_form: true
+enable_print_version: true
+
+# Footer content
+footer_text: "Building the future of cloud computing and artificial intelligence" 

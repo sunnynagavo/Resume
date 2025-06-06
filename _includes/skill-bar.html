@@ -1,0 +1,100 @@
+<div class="skill-bar-container">
+    <div class="skill-info">
+        <span class="skill-name">{{ include.name }}</span>
+        <span class="skill-percentage">{{ include.percentage }}%</span>
+    </div>
+    <div class="skill-bar">
+        <div class="skill-progress" data-percentage="{{ include.percentage }}" style="width: 0%">
+            <div class="skill-tooltip">{{ include.description }}</div>
+        </div>
+    </div>
+</div>
+
+<style>
+.skill-bar-container {
+    margin-bottom: 1.5rem;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    font-weight: 500;
+    color: var(--primary, #205081);
+}
+
+.skill-percentage {
+    color: var(--secondary, #1a4d2e);
+}
+
+.skill-bar {
+    height: 8px;
+    background: rgba(32, 80, 129, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary, #205081), var(--secondary, #1a4d2e));
+    border-radius: 4px;
+    transition: width 1.5s cubic-bezier(0.1, 0.5, 0.2, 1);
+    position: relative;
+}
+
+.skill-tooltip {
+    position: absolute;
+    top: -40px;
+    right: -10px;
+    background: var(--primary, #205081);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.skill-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--primary, #205081);
+}
+
+.skill-progress:hover .skill-tooltip {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progress = entry.target;
+                const percentage = progress.getAttribute('data-percentage');
+                setTimeout(() => {
+                    progress.style.width = percentage + '%';
+                }, 200);
+                observer.unobserve(progress);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.skill-progress').forEach(progress => {
+        observer.observe(progress);
+    });
+});
+</script> 

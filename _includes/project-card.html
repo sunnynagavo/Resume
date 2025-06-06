@@ -1,0 +1,147 @@
+<div class="project-card" data-technologies="{{ include.technologies }}">
+    <div class="project-image" style="background-image: url('{{ include.image }}')">
+        <div class="project-overlay">
+            <div class="project-links">
+                {% if include.demo_url %}
+                <a href="{{ include.demo_url }}" target="_blank" class="project-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    Demo
+                </a>
+                {% endif %}
+                {% if include.github_url %}
+                <a href="{{ include.github_url }}" target="_blank" class="project-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    Code
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="project-content">
+        <h3 class="project-title">{{ include.title }}</h3>
+        <p class="project-description">{{ include.description }}</p>
+        <div class="project-tech">
+            {% assign techs = include.technologies | split: "," %}
+            {% for tech in techs %}
+            <span class="tech-tag">{{ tech | strip }}</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<style>
+.project-card {
+    background: var(--background, white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: var(--primary, #205081);
+    transition: all 0.2s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    background: var(--secondary, #1a4d2e);
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-title {
+    color: var(--primary, #205081);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.project-description {
+    color: var(--text, #24292e);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background: rgba(32, 80, 129, 0.1);
+    color: var(--primary, #205081);
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+    background: var(--primary, #205081);
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .project-image {
+        height: 150px;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+}
+</style> 
