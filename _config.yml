@@ -13,22 +13,13 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
 
-# Site Config
+# Theme Config
+layout: default
 name: Naga Santhosh Reddy Vootukuri
 email: sunnycoder5@gmail.com
 phone: +1 (XXX) XXX-XXXX
 website: https://dzone.com/authors/sunnynagavo
 darkmode: false
-
-# Resume settings
-resume_avatar:                  true
-resume_name:                    "Naga Santhosh Reddy Vootukuri"
-resume_title:                   "Principal Software Engineering Manager | Microsoft Azure SQL Engineering"
-resume_contact_email:           "sunnycoder5@gmail.com"
-resume_contact_telephone:       "+1 (XXX) XXX-XXXX"
-resume_contact_address:         "Seattle, WA"
-resume_header_contact_info:     "Seattle, WA | sunnycoder5@gmail.com | +1 (XXX) XXX-XXXX"
-resume_header_intro:            "Accomplished Principal Software Engineering Manager with 17+ years of progressive leadership experience at Microsoft, specializing in Azure SQL Database technologies, cloud computing, and artificial intelligence."
 
 # Social links
 github_username: sunnynagavo
@@ -47,30 +38,14 @@ additional_links:
     icon: fas fa-chalkboard-teacher
     url: https://adplist.org/mentors/sunny
 
-# Theme customization
-colors:
-  primary: "#205081"
-  secondary: "#1a4d2e"
-  accent: "#0366d6"
-  background: "#fcfcfc"
-  text: "#24292e"
+# Content
+content:
+  - title: About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Accomplished Principal Software Engineering Manager with **17+ years** of progressive leadership experience at Microsoft, specializing in Azure SQL Database technologies, cloud computing, and artificial intelligence. Demonstrated expertise in leading cross-functional teams, driving product innovation, and delivering scalable solutions to **millions of users worldwide**. Distinguished thought leader with **7 published research papers**, **27 technical articles**, and recognition as a **top cloud computing expert**. Active mentor, conference speaker, and technical reviewer contributing to the advancement of software engineering practices and AI applications.
 
-# Additional settings
-show_downloads: true
-enable_dark_mode: true
-enable_contact_form: true
-enable_print_version: true
-
-# Footer content
-footer_text: "Building the future of cloud computing and artificial intelligence"
-
-# About Section
-about_title: About Me
-about_profile_image: picture.jpeg
-about_content: | # this will include new lines to allow paragraphs
-  Accomplished Principal Software Engineering Manager with **17+ years** of progressive leadership experience at Microsoft, specializing in Azure SQL Database technologies, cloud computing, and artificial intelligence. Demonstrated expertise in leading cross-functional teams, driving product innovation, and delivering scalable solutions to **millions of users worldwide**. Distinguished thought leader with **7 published research papers**, **27 technical articles**, and recognition as a **top cloud computing expert**. Active mentor, conference speaker, and technical reviewer contributing to the advancement of software engineering practices and AI applications.
-
-  Recently featured in [Business Insider](https://www.businessinsider.com/microsoft-manager-ai-reduces-busywork-not-daily-workload-2024-10) discussing AI's impact on engineering management and productivity.
+      Recently featured in [Business Insider](https://www.businessinsider.com/microsoft-manager-ai-reduces-busywork-not-daily-workload-2024-10) discussing AI's impact on engineering management and productivity.
 
 # Footer
 footer_show_references: false
