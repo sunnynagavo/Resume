@@ -5,11 +5,21 @@ url: "https://sunnynagavo.github.io"
 
 # Build settings
 markdown: kramdown
-remote_theme: sproogen/modern-resume-theme
+remote_theme: sproogen/modern-resume-theme@v4.2.0
+sass:
+  style: compressed
 
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
+
+# Site settings
+name: Naga Santhosh Reddy Vootukuri
+title: Principal Software Engineering Manager | Microsoft Azure SQL Engineering
+email: sunnycoder5@gmail.com
+phone: +1 (XXX) XXX-XXXX
+website: https://dzone.com/authors/sunnynagavo
+darkmode: false
 
 # Resume settings
 resume_avatar:                  true
@@ -22,16 +32,17 @@ resume_header_contact_info:     "Seattle, WA | sunnycoder5@gmail.com | +1 (XXX) 
 resume_header_intro:            "Accomplished Principal Software Engineering Manager with 17+ years of progressive leadership experience at Microsoft, specializing in Azure SQL Database technologies, cloud computing, and artificial intelligence."
 
 # Social links
-github_username:               sunnynagavo
-linkedin_username:            naga-santhosh-reddy-vootukuri-5a67a133
+github_username: sunnynagavo
+linkedin_username: naga-santhosh-reddy-vootukuri-5a67a133
 additional_links:
 - title: DZone
-  icon: fas fa-globe
+  icon: fa-globe
   url: https://dzone.com/authors/sunnynagavo
 - title: Speaking
-  icon: fas fa-microphone
+  icon: fa-microphone
   url: https://sessionize.com/naga-santhosh-reddy-vootukuri
 - title: Scholar
+  icon: fa-graduation-cap
   icon: fas fa-graduation-cap
   url: https://scholar.google.com/citations?user=dlQOtWYAAAAJ&hl=en
 - title: Mentoring
