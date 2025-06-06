@@ -1,8 +1,3 @@
----
-layout: default
-title: Naga Santhosh Reddy Vootukuri - Resume
----
-
 # **NAGA SANTHOSH REDDY VOOTUKURI**
 ## Principal Software Engineering Manager | Microsoft Azure SQL Engineering
 
