@@ -5,7 +5,7 @@ url: "https://sunnynagavo.github.io"
 
 # Build settings
 markdown: kramdown
-remote_theme: sproogen/modern-resume-theme@v2.0.2
+remote_theme: sproogen/modern-resume-theme@v2.0.10
 sass:
   style: compressed
 
@@ -13,9 +13,8 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
 
-# Site settings
+# Site Config
 name: Naga Santhosh Reddy Vootukuri
-title: Principal Software Engineering Manager | Microsoft Azure SQL Engineering
 email: sunnycoder5@gmail.com
 phone: +1 (XXX) XXX-XXXX
 website: https://dzone.com/authors/sunnynagavo
@@ -36,16 +35,16 @@ github_username: sunnynagavo
 linkedin_username: naga-santhosh-reddy-vootukuri-5a67a133
 additional_links:
   - title: DZone
-    icon: fa fa-globe
+    icon: fas fa-globe
     url: https://dzone.com/authors/sunnynagavo
   - title: Speaking
-    icon: fa fa-microphone
+    icon: fas fa-microphone
     url: https://sessionize.com/naga-santhosh-reddy-vootukuri
   - title: Scholar
-    icon: fa fa-graduation-cap
+    icon: fas fa-graduation-cap
     url: https://scholar.google.com/citations?user=dlQOtWYAAAAJ&hl=en
   - title: Mentoring
-    icon: fa fa-chalkboard-teacher
+    icon: fas fa-chalkboard-teacher
     url: https://adplist.org/mentors/sunny
 
 # Theme customization
@@ -67,7 +66,7 @@ footer_text: "Building the future of cloud computing and artificial intelligence
 
 # About Section
 about_title: About Me
-about_profile_image: assets/images/profile.jpg
+about_profile_image: picture.jpeg
 about_content: | # this will include new lines to allow paragraphs
   Accomplished Principal Software Engineering Manager with **17+ years** of progressive leadership experience at Microsoft, specializing in Azure SQL Database technologies, cloud computing, and artificial intelligence. Demonstrated expertise in leading cross-functional teams, driving product innovation, and delivering scalable solutions to **millions of users worldwide**. Distinguished thought leader with **7 published research papers**, **27 technical articles**, and recognition as a **top cloud computing expert**. Active mentor, conference speaker, and technical reviewer contributing to the advancement of software engineering practices and AI applications.
 
