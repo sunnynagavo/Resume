@@ -6,9 +6,9 @@
 **📍 Seattle, WA** | **📧 sunnycoder5@gmail.com** | **📱 +1 (XXX) XXX-XXXX**
 
 **🔗 LinkedIn:** [linkedin.com/in/naga-santhosh-reddy-vootukuri-5a67a133](https://linkedin.com/in/naga-santhosh-reddy-vootukuri-5a67a133)  
-**💻 GitHub:** [github.com/sunnynagavo](https://github.com/sunnynagavo) | **🎤 Speaking:** [sessionize.com/naga-santhosh-reddy-vootukuri](https://sessionize.com/naga-santhosh-reddy-vootukuri)  
-**📝 Technical Blog:** [dzone.com/authors/sunnynagavo](https://dzone.com/authors/sunnynagavo) | **🎓 Scholar:** [Google Scholar Profile](https://scholar.google.com/citations?user=dlQOtWYAAAAJ&hl=en)  
-**👨‍🏫 Mentoring:** [adplist.org/mentors/sunny](https://adplist.org/mentors/sunny)
+**💻 GitHub:** [github.com/sunnynagavo](https://github.com/sunnynagavo) | **🎤 Speaking:** [Sessionize Profile](https://sessionize.com/naga-santhosh-reddy-vootukuri)  
+**📝 Technical Blog:** [DZONE](https://dzone.com/authors/sunnynagavo) | **🎓 Scholar:** [Google Scholar Profile](https://scholar.google.com/citations?user=dlQOtWYAAAAJ&hl=en)  
+**👨‍🏫 Mentoring:** [ADPList](https://adplist.org/mentors/sunny)
 
 ---
 
@@ -33,7 +33,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 - **Architecture:** Distributed Systems, Microservices, RESTful APIs, DevOps & CI/CD
 
 ### **Development & Tools**
-- **Frameworks:** ASP.NET, .NET Core, Kubernetes, Docker
+- **Frameworks:** .NET Aspire, Asp.Net Core, Asp.Net Web API, Maui, Blazor, WPF, WCF, Kubernetes, Docker
 - **Tools:** Visual Studio, Git, Azure DevOps, Application Insights, Power BI
 
 ---
@@ -46,6 +46,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 🎯 **Lead Azure SQL Deployment initiatives** focusing on high availability for **millions of SQL customers** during feature rollouts  
 ⚡ **Spearhead design and implementation** of CAB Framework, enhancing product deployment for **3,000+ Azure SQL users**  
 👥 **Manage cross-functional teams** through complete software development lifecycle, ensuring successful product launches  
+👨‍🎓 **Mentored and coached multiple engineers**, facilitating their career growth and technical development
 🚀 **Pioneer migration** of multi-machine cloud tests from on-premise to Azure SQL platform, optimizing system performance  
 📊 **Drive strategic technical decisions** for large-scale distributed systems serving millions of databases globally
 
@@ -56,7 +57,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 🛠️ **Developed comprehensive testing framework** utilized across the entire SQL team, improving overall software quality  
 ⚙️ **Implemented large-scale distributed system** for deploying Azure SQL latest bits to millions of databases  
 🤝 **Established community connections** and contributed actively to Microsoft forums, building strong customer relationships  
-👨‍🎓 **Mentored and coached multiple engineers**, facilitating their career growth and technical development
+
 
 ### **Software Engineer 2 - Master Data Services** | *Microsoft Corporation* | *Hyderabad, India / Seattle, WA*
 **June 2016 - November 2017**
@@ -65,7 +66,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 ⚡ **Stabilized MDS 2016** by resolving top performance issues, resulting in **skyrocketed MDS adoption rate**  
 🚀 **Performance Optimization:** Reduced 1 million record insertion time from **20 minutes to 15 seconds**  
 📊 **Implemented end-to-end telemetry** using Application Insights for complete exception tracking and usage analytics  
-🔄 **Owned entire sustained engineering** for previous versions (2016/2014), managing complete RFC to release cycle
+🔄 **Owned entire sustained engineering** for previous versions (2016/2014), managing complete RFC to release cycle...
 
 ### **Software Engineer - SQL Server Integration Services (SSIS)** | *Microsoft Corporation* | *Hyderabad, India*
 **September 2015 - June 2016**
@@ -135,8 +136,44 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 📗 **"Building Cloud-Native Applications with .NET Aspire"** | *BPB Publications* (Expected April 2025)
 
 ### **Technical Reviewer & Editor**
-📘 **"Parallel Programming with C# and .NET: Fundamentals of Concurrency and Asynchrony"** | *Vaskaran Sarcar, Apress*  
-📚 **8+ Technical/Programming books (Apress, Packt, Manning)** served as Technical Editor with front matter credits and certificates
+
+- 📘 [Parallel Programming with C# and .NET: Fundamentals of Concurrency and Asynchrony](https://www.apress.com/gp/book/9781484298795)  
+  *Author: Vaskaran Sarcar, Publisher: Apress (June 2024)* – Technical Reviewer
+
+- 📘 [Generative AI and AWS](https://www.amazon.com/Generative-AI-AWS-Leto-ebook/dp/B0CXYV5Q8K/)  
+  *Author: Leto, Publisher: Amazon (September 2024)* – Technical Reviewer (3 chapters)
+
+- 📘 [SQL Anti-Patterns](https://www.amazon.com/SQL-Anti-Patterns-Programming-Practices-Problem/dp/1680504789)  
+  *Author: Gajendra Tokkala, Self-Published (September 2024)* – Technical Reviewer
+
+- 📗 [A Simple Guide to Retrieval Augmented Generation](https://www.manning.com/books/a-simple-guide-to-retrieval-augmented-generation)  
+  *Author: Abhinav, Publisher: Manning (September 2024)* – Technical Reviewer (3 chapters)
+
+- 📗 [100 SQL Server Mistakes and How to Avoid Them](https://www.manning.com/books/100-sql-server-mistakes-and-how-to-avoid-them)  
+  *Author: Peter Carter, Publisher: Manning (Published early 2025)* – Full Book Reviewer  
+  *My name and quote appear in the book.*
+
+- 📗 [Generative AI Web Apps](https://www.manning.com/books/generative-ai-web-apps)  
+  *Author: Theo Despoudis, Publisher: Manning* – Technical Reviewer (4 chapters)
+
+- 📗 [Building LLM-Powered Solutions](https://www.manning.com/books/building-llm-powered-solutions)  
+  *Author: Hamza Farooq, Publisher: Manning* – Technical Reviewer
+
+- 📘 [Microsoft Fabric Analytics Engineer Associate Certification Companion](https://www.apress.com/gp/book/9781484303257)  
+  *Publisher: Apress (December 2024)* – Technical Reviewer
+
+- 📙 [GUI Programming with C#](https://www.packtpub.com/product/gui-programming-with-csharp/9781804618655)  
+  *Publisher: Packt (December 2024)* – Technical Reviewer
+
+- 📘 [Software Engineering Made Easy](https://www.apress.com/gp/book/9781484303257)  
+  *Author: Marco, Publisher: Apress (December 2024)* – Technical Reviewer
+
+- 📘 [Secure RESTFUL APIs](https://www.apress.com/gp/book/9781484298795)  
+  *Author: Nardone, Publisher: Apress (December 2024)* – Technical Reviewer
+
+- 📙 [Copilot Pro Step by Step](https://www.pearson.com/en-us/subject-catalog/p/copilot-pro-step-by-step/P200000011838/9780138172042)  
+  *Author: Lisa Crosbie, Publisher: Microsoft Press/Pearson (December 2024)* – Full Book Reviewer  
+  *Lisa Crosbie is a YouTube influencer (80K+ subscribers).*
 
 ---
 
@@ -148,7 +185,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 📝 **Notable Articles:**
 - "Embracing Responsible AI: Principles and Practices" (June 2024)
 - "Building AI-Driven Intelligent Applications" (March 2025)
-- "The Enterprise Journey to Cloud Adoption" (February 2024)
+- "The Enterprise Journey to Cloud Adoption" (February 2024)...
 
 ### **DZone Trend Reports**
 📈 **3 eBook articles** in trend reports read by **millions of developers**  
@@ -173,13 +210,12 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 
 ## **⚖️ HACKATHON JUDGING & EVALUATION**
 
-🏆 **Microsoft Developers AI Learning Hackathon (Cosmos DB)** - Judge  
-&nbsp;&nbsp;&nbsp;&nbsp;📊 9,500+ developers worldwide | Top 0.2% of all Devpost hackathons
-
-🤖 **Microsoft RAG Hackathon** - Judge  
-☁️ **Azure AI Hackathon** - Ongoing Judge  
-🔮 **Azure AI Agents Hackathon** - Current Judge  
-📝 **5+ external hackathons** served as judge (enterprise/professional level)
+- 🏆 [Microsoft Developers AI Learning Hackathon (Cosmos DB)](https://azurecosmosdb.devpost.com/) – Judge
+- 🤖 [Microsoft RAG Hackathon](https://github.com/microsoft/RAG_Hack) – Judge
+- 🧠 [Microsoft Fabric and AI Learning Hackathon](https://blog.fabric.microsoft.com/en-us/blog/17320/preview) – Judge
+- ☁️ [Azure AI Developer Hackathon](https://azureaidev.devpost.com/) – Judge
+- 🔮 [Azure AI Agents Hackathon](https://microsoft.github.io/AI_Agents_Hackathon/) – Judge
+- 💡 [Geekle AI Hackathon](https://geekle.us/) – Judge
 
 ---
 
@@ -207,7 +243,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 🔬 **IEEE Senior Member**  
 📊 **Editorial Board Member** - Science Research Journal (SCI indexed)  
 🎓 **SCRS Fellowship**  
-📚 **Threw Fellowship**  
+📚 **Hackathon Raptors Fellowship** (awaiting response)  
 💻 **BCS Applied** (awaiting response)
 
 ---
@@ -216,7 +252,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 
 ### **ADPList Active Mentor**
 🎯 **Focus Areas:** Product Engineering, Resume Reviews, Problem Solving, Career Progression  
-⭐ **Profile:** [adplist.org/mentors/sunny](https://adplist.org/mentors/sunny)
+⭐ **Profile:** [ADPList](https://adplist.org/mentors/sunny)
 
 ### **Microsoft Internal Mentoring**
 👥 **Coached several engineers** within Microsoft for career development  
@@ -224,13 +260,20 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 
 ---
 
+## **🏅 OTHER PROFESSIONAL ACTIVITIES**
+
+- 🎤 [MLADS+ Seminar Reviewer and also Session Chair (Microsoft)](https://www.credly.com/badges/e436298c-2593-42e6-830e-74eea1121b04/public_url)
+- 🏢 Geekle CTO Summit – Core Member & Participant
+
+---
+
 ## **📺 MEDIA COVERAGE & EXPERT COMMENTARY**
 
-📰 **Business Insider** - "Microsoft Manager Explains How AI Changed His Job" (October 2024)  
-&nbsp;&nbsp;&nbsp;&nbsp;💡 Featured: AI reduced coding time by 70%, improved efficiency in meetings
+- 📰 [Business Insider – "Microsoft Manager Explains How AI Changed His Job"](https://www.businessinsider.com/microsoft-manager-ai-reduces-busywork-not-daily-workload-2024-10) (October 2024)  
+  💡 Featured: AI reduced coding time by 70%, improved efficiency in meetings
 
-💼 **Information Week** - Expert commentary on "How to Find and Train Internal AI Talent"  
-🔧 **Jotform** - Technical expert on Microsoft Teams Integration
+- 💼 [Information Week – Expert commentary on "How to Find and Train Internal AI Talent"](https://www.informationweek.com/machine-learning-ai/how-to-find-and-train-internal-ai-talent)
+- 🔧 [Jotform – Technical expert on Microsoft Teams Integration](https://www.jotform.com/blog/microsoft-teams-integration/)
 
 ---
 
@@ -239,10 +282,10 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 ✅ **17+ years** of progressive leadership at Microsoft  
 📊 **Millions of users** impacted through Azure SQL Database innovations  
 📚 **7 published research papers** + 3 under review  
-📖 **2 books authored** + 8 books technically reviewed  
+📖 **2 books authored** + 12 books technically reviewed  
 ✍️ **27 technical articles** with 124K+ pageviews  
 🎤 **15+ conference presentations** as invited speaker  
-⚖️ **5+ hackathons judged** at enterprise level  
+⚖️ **6+ hackathons judged** at enterprise level  
 🏆 **Multiple awards** including recognition from Microsoft CTO  
 👨‍🏫 **Active mentor** helping engineers advance their careers  
 🔬 **IEEE Senior Member** and editorial board member
