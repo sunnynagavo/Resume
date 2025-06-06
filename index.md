@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # **NAGA SANTHOSH REDDY VOOTUKURI**
 ## Principal Software Engineering Manager | Microsoft Azure SQL Engineering
 
