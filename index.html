@@ -16,25 +16,33 @@
         }
         .header-flex {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
             margin-bottom: 1.5em;
-            gap: 2em;
+            gap: 3em;
         }
         .main-content {
-            flex: 1 1 auto;
+            flex: 1;
             min-width: 0;
+            max-width: calc(100% - 180px);
         }
-        .main-content h1 {
+        .name-title {
+            margin: 0;
+            padding: 0;
+        }
+        .name {
             margin: 0;
             padding: 0;
             border: none;
-            font-size: 2.5em;
+            font-size: 2.2em;
             font-weight: 700;
             color: #24292e;
             line-height: 1.2;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-        .main-content h2 {
+        .title {
             margin: 0.3em 0 0 0;
             padding: 0;
             border: none;
@@ -51,12 +59,13 @@
             border: none;
         }
         .profile-pic {
-            width: 130px;
-            height: 130px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
             box-shadow: 0 3px 6px rgba(0,0,0,0.16);
             flex-shrink: 0;
+            margin-top: 0.5em;
         }
         h3 {
             color: #24292e;
@@ -85,11 +94,16 @@
                 align-items: center;
                 gap: 1em;
             }
-            .main-content h1, .main-content h2 {
+            .main-content {
+                max-width: 100%;
+            }
+            .name, .title {
                 text-align: center;
             }
             .profile-pic {
                 margin-top: 1em;
+                width: 130px;
+                height: 130px;
             }
         }
     </style>
@@ -107,14 +121,15 @@
                 const lines = text.split('\n');
                 let h1 = '', h2 = '', rest = [];
                 let foundH1 = false, foundH2 = false;
+                
                 for (let i = 0; i < lines.length; i++) {
                     if (!foundH1 && lines[i].startsWith('# ')) {
-                        h1 = lines[i];
+                        h1 = lines[i].replace(/^# \*\*|\*\*$/g, '');
                         foundH1 = true;
                         continue;
                     }
                     if (foundH1 && !foundH2 && lines[i].startsWith('## ')) {
-                        h2 = lines[i];
+                        h2 = lines[i].replace(/^## /, '');
                         foundH2 = true;
                         continue;
                     }
@@ -123,15 +138,32 @@
                         break;
                     }
                 }
+
                 // Create the header with flex layout
                 const header = document.createElement('div');
                 header.className = 'header-flex';
 
                 const mainContent = document.createElement('div');
                 mainContent.className = 'main-content';
-                mainContent.innerHTML = marked.parse(h1) +
-                    '<div class="title-separator"></div>' +
-                    marked.parse(h2);
+
+                const nameTitle = document.createElement('div');
+                nameTitle.className = 'name-title';
+
+                const name = document.createElement('div');
+                name.className = 'name';
+                name.textContent = h1;
+
+                const separator = document.createElement('div');
+                separator.className = 'title-separator';
+
+                const title = document.createElement('div');
+                title.className = 'title';
+                title.textContent = h2;
+
+                nameTitle.appendChild(name);
+                nameTitle.appendChild(separator);
+                nameTitle.appendChild(title);
+                mainContent.appendChild(nameTitle);
 
                 const img = document.createElement('img');
                 img.src = 'assets/profilepic.jpeg';
