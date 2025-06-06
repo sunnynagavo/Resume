@@ -3,7 +3,7 @@
 
 ---
 
-**📍 Seattle, WA** | **📧 nagavo@microsoft.com** | **📱 +1 (XXX) XXX-XXXX**
+**📍 Seattle, WA** | **📧 sunnycoder5@gmail.com** | **📱 +1 (XXX) XXX-XXXX**
 
 **🔗 LinkedIn:** [linkedin.com/in/naga-santhosh-reddy-vootukuri-5a67a133](https://linkedin.com/in/naga-santhosh-reddy-vootukuri-5a67a133)  
 **💻 GitHub:** [github.com/sunnynagavo](https://github.com/sunnynagavo) | **🎤 Speaking:** [sessionize.com/naga-santhosh-reddy-vootukuri](https://sessionize.com/naga-santhosh-reddy-vootukuri)  
