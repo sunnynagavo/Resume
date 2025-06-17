@@ -141,20 +141,20 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
   *Author: Vaskaran Sarcar, Publisher: Apress (June 2024)* – Technical Reviewer and written foreword
 
 - 📘 [Generative AI and AWS](https://www.amazon.com/Generative-AI-AWS-Leto-ebook/dp/B0CXYV5Q8K/)  
-  *Author: Leto, Publisher: Amazon (September 2024)* – Technical Reviewer (3 chapters)
+  *Author: Leto, Publisher: Amazon (September 2024)* – Technical Reviewer
 
 - 📘 [SQL Anti-Patterns](https://www.amazon.com/Data-Governance-Worth-Leadership-Perspective/dp/B0DQV9T9YB?ref_=ast_author_dp)  
   *Author: Gajendra Tokkala, Self-Published (September 2024)* – Technical Reviewer
 
 - 📗 [A Simple Guide to Retrieval Augmented Generation](https://www.manning.com/books/a-simple-guide-to-retrieval-augmented-generation)  
-  *Author: Abhinav, Publisher: Manning (September 2024)* – Technical Reviewer (3 chapters)
+  *Author: Abhinav, Publisher: Manning (September 2024)* – Technical Reviewer
 
 - 📗 [100 SQL Server Mistakes and How to Avoid Them](https://www.manning.com/books/100-sql-server-mistakes-and-how-to-avoid-them)  
   *Author: Peter Carter, Publisher: Manning (Published early 2025)* – Full Book Reviewer  
   *My name and quote appear in the book.*
 
 - 📗 [Generative AI Web Apps](https://www.manning.com/books/building-ai-applications-on-the-web)  
-  *Author: Theo Despoudis, Publisher: Manning* – Technical Reviewer (4 chapters)
+  *Author: Theo Despoudis, Publisher: Manning* – Technical Reviewer
 
 - 📗 [Building LLM-Powered Solutions](https://www.manning.com/books/build-an-llm-application-from-scratch)  
   *Author: Hamza Farooq, Publisher: Manning* – Technical Reviewer
