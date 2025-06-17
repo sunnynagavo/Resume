@@ -183,9 +183,9 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 📊 **27 published articles** with **124,300+ pageviews**  
 🏆 **Top 4 expert** in cloud computing out of **million developers**  
 📝 **Notable Articles:**
-- "Embracing Responsible AI: Principles and Practices" (June 2024)
-- "Building AI-Driven Intelligent Applications" (March 2025)
-- "The Enterprise Journey to Cloud Adoption" (February 2024)...
+        - "Embracing Responsible AI: Principles and Practices" (June 2024)
+        - "Building AI-Driven Intelligent Applications" (March 2025)
+        - "The Enterprise Journey to Cloud Adoption" (February 2024)...
 
 ### **DZone Trend Reports**
 📈 [**3 eBook articles**](https://dzone.com/authors/sunnynagavo) in trend reports read by **millions of developers**  
