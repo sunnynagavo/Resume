@@ -132,18 +132,18 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 ## **📖 BOOKS & TECHNICAL EDITING**
 
 ### **Primary Author**
-📕 **"Exploring Azure Container Apps: Scaling Modern and Cloud-Native Applications"** | *Apress* (2025)  
-📗 **"Building Cloud-Native Applications with .NET Aspire"** | *BPB Publications* (Expected April 2025)
+📕 [**"Exploring Azure Container Apps: Scaling Modern and Cloud-Native Applications"**](https://link.springer.com/book/9798868814853) | *Apress* (2025)  
+📗 **"Building Cloud-Native Applications with .NET Aspire"** | *BPB Publications* (Expected June 2025)
 
 ### **Technical Reviewer & Editor**
 
-- 📘 [Parallel Programming with C# and .NET: Fundamentals of Concurrency and Asynchrony](https://www.apress.com/gp/book/9781484298795)  
-  *Author: Vaskaran Sarcar, Publisher: Apress (June 2024)* – Technical Reviewer
+- 📘 [Parallel Programming with C# and .NET: Fundamentals of Concurrency and Asynchrony](https://link.springer.com/book/10.1007/979-8-8688-0488-5)  
+  *Author: Vaskaran Sarcar, Publisher: Apress (June 2024)* – Technical Reviewer and written foreword
 
 - 📘 [Generative AI and AWS](https://www.amazon.com/Generative-AI-AWS-Leto-ebook/dp/B0CXYV5Q8K/)  
   *Author: Leto, Publisher: Amazon (September 2024)* – Technical Reviewer (3 chapters)
 
-- 📘 [SQL Anti-Patterns](https://www.amazon.com/SQL-Anti-Patterns-Programming-Practices-Problem/dp/1680504789)  
+- 📘 [SQL Anti-Patterns](https://www.amazon.com/Data-Governance-Worth-Leadership-Perspective/dp/B0DQV9T9YB?ref_=ast_author_dp)  
   *Author: Gajendra Tokkala, Self-Published (September 2024)* – Technical Reviewer
 
 - 📗 [A Simple Guide to Retrieval Augmented Generation](https://www.manning.com/books/a-simple-guide-to-retrieval-augmented-generation)  
@@ -153,25 +153,25 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
   *Author: Peter Carter, Publisher: Manning (Published early 2025)* – Full Book Reviewer  
   *My name and quote appear in the book.*
 
-- 📗 [Generative AI Web Apps](https://www.manning.com/books/generative-ai-web-apps)  
+- 📗 [Generative AI Web Apps](https://www.manning.com/books/building-ai-applications-on-the-web)  
   *Author: Theo Despoudis, Publisher: Manning* – Technical Reviewer (4 chapters)
 
-- 📗 [Building LLM-Powered Solutions](https://www.manning.com/books/building-llm-powered-solutions)  
+- 📗 [Building LLM-Powered Solutions](https://www.manning.com/books/build-an-llm-application-from-scratch)  
   *Author: Hamza Farooq, Publisher: Manning* – Technical Reviewer
 
 - 📘 [Microsoft Fabric Analytics Engineer Associate Certification Companion](https://www.apress.com/gp/book/9781484303257)  
   *Publisher: Apress (December 2024)* – Technical Reviewer
 
-- 📙 [GUI Programming with C#](https://www.packtpub.com/product/gui-programming-with-csharp/9781804618655)  
+- 📙 [GUI Programming with C#](https://www.packtpub.com/en-us/product/gui-programming-with-c-9781835882559?srsltid=AfmBOoo8Q9LfUWDW08cJLKm0r2wilEOv9wHbhu8GiZNx3Es72rk2Ru85)  
   *Publisher: Packt (December 2024)* – Technical Reviewer
 
-- 📘 [Software Engineering Made Easy](https://www.apress.com/gp/book/9781484303257)  
+- 📘 [Software Engineering Made Easy](https://link.springer.com/book/9798868813856)  
   *Author: Marco, Publisher: Apress (December 2024)* – Technical Reviewer
 
-- 📘 [Secure RESTFUL APIs](https://www.apress.com/gp/book/9781484298795)  
+- 📘 [Secure RESTFUL APIs](https://link.springer.com/book/10.1007/979-8-8688-1285-9)  
   *Author: Nardone, Publisher: Apress (December 2024)* – Technical Reviewer
 
-- 📙 [Copilot Pro Step by Step](https://www.pearson.com/en-us/subject-catalog/p/copilot-pro-step-by-step/P200000011838/9780138172042)  
+- 📙 [Copilot Pro Step by Step](https://www.microsoftpressstore.com/store/microsoft-copilot-pro-step-by-step-9780135369487)  
   *Author: Lisa Crosbie, Publisher: Microsoft Press/Pearson (December 2024)* – Full Book Reviewer  
   *Lisa Crosbie is a YouTube influencer (80K+ subscribers).*
 
@@ -188,17 +188,17 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 - "The Enterprise Journey to Cloud Adoption" (February 2024)...
 
 ### **DZone Trend Reports**
-📈 **3 eBook articles** in trend reports read by **millions of developers**  
-🎯 **Topics:** Generative AI, Cloud Architecture, Database Modernization
+📈 [**3 eBook articles**](https://dzone.com/authors/sunnynagavo) in trend reports read by **millions of developers**  
+🎯 [**Topics:**](https://dzone.com/authors/sunnynagavo) Generative AI, Cloud Architecture, Database Modernization
 
 ---
 
 ## **🎤 SPEAKING ENGAGEMENTS & CONFERENCES**
 
-🎯 **Software Architecture Conference** (August 2025) - Invited Speaker  
-⚡ **IEEE AI Innovation Summit** - Technical Lightning Committee Chair (Seattle)  
-🗣️ **15+ conference presentations** across various technology topics  
-👥 **DZone Virtual Roundtables** - Panel Expert on Database Systems & Kubernetes
+🎯 [**Software Architecture Conference**](https://softwarearchitecture.live/) (August 2025) - Invited Speaker  
+⚡ [**IEEE AI Innovation Summit**](https://attend.ieee.org/newera/exploring-generative-ai-and-prompt-engineering-with-microsoft-copliot/) - Technical Lightning Committee Chair (Seattle)  
+🗣️ [**15+ conference presentations**](https://sessionize.com/naga-santhosh-reddy-vootukuri/)  across various technology topics  
+👥 [**DZone Virtual Roundtables**](https://dzone.com/authors/sunnynagavo) - Panel Expert on Database Systems & Kubernetes
 
 **Key Topics:**
 - Revolutionizing Cloud-Native Development with .NET Aspire
@@ -225,6 +225,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 ⭐ **Star Award** for Excellent Performer  
 🚀 **Technovation Award** (from Chief Technology Officer)  
 🎯 **Delivery Excellence Award** | **BIG Team Award** | **Dream Team Award**
+💡 [**Top 4 Cloud Computing Expert in DZone**](https://dzone.com/cloud-architecture)
 
 ### **Industry Recognition**
 🛡️ **Globee Awards Judge** - Cybersecurity Category (2024)  
