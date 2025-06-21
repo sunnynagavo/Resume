@@ -230,6 +230,8 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 ### **Industry Recognition**
 🛡️ **Globee Awards Judge** - Cybersecurity Category (2024)  
 🏅 **SQL BI Awards**  
+🧠 **Perplexity AI Business fellow** 
+🏅 **Docker captain**
 📰 **Business Insider Featured Expert** (October 2024) - "How AI Changed His Job"
 
 ### **Professional Recognition**
@@ -244,6 +246,9 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 🔬 **IEEE Senior Member**  
 📊 **Editorial Board Member** - Science Research Journal (SCI indexed)  
 🎓 **SCRS Fellowship**  
+💎 **Perplexity AI Business Fellowship** 
+🧠 **Redgate Community Ambassador** 
+🏅 **Docker Captain** (awaiting response)
 📚 **Hackathon Raptors Fellowship** (awaiting response)  
 💻 **BCS Applied** (awaiting response)
 
