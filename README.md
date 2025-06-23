@@ -195,17 +195,19 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 
 ## **🎤 SPEAKING ENGAGEMENTS & CONFERENCES**
 
+💡 [**Geekle CTO Summit**] (https://event.geekle.us/cto#speakears) - Invited as Top voice and Keynote speaker
 🎯 [**Software Architecture Conference**](https://softwarearchitecture.live/) (August 2025) - Invited Speaker  
 ⚡ [**IEEE AI Innovation Summit**](https://attend.ieee.org/newera/exploring-generative-ai-and-prompt-engineering-with-microsoft-copliot/) - Technical Lightning Committee Chair (Seattle)  
 🗣️ [**15+ conference presentations**](https://sessionize.com/naga-santhosh-reddy-vootukuri/)  across various technology topics  
 👥 [**DZone Virtual Roundtables**](https://dzone.com/authors/sunnynagavo) - Panel Expert on Database Systems & Kubernetes
+
 
 **Key Topics:**
 - Revolutionizing Cloud-Native Development with .NET Aspire
 - Azure Container Apps Deep Dive  
 - AI Pair Programming using GitHub Copilot
 - Database Systems Modernization
-
+- Building distributed Polyglot Microservices using .NET Aspire
 ---
 
 ## **⚖️ HACKATHON JUDGING & EVALUATION**
