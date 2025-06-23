@@ -248,8 +248,9 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 🎓 **SCRS Fellowship**  
 💎 **Perplexity AI Business Fellowship** 
 🧠 **Redgate Community Ambassador** 
-🏅 **Docker Captain** (awaiting response)
-📚 **Hackathon Raptors Fellowship** (awaiting response)  
+🏅 **Docker Captain**
+📚 **Hackathon Raptors Fellowship** 
+💡 **Threws Fellowship** (awaiting)
 💻 **BCS Applied** (awaiting response)
 
 ---
