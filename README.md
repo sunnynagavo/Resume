@@ -234,13 +234,13 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 🏅 **SQL BI Awards**  
 🧠 **Perplexity AI Business fellow** 
 🏅 **Docker captain**
-📰 **Business Insider Featured Expert** (October 2024) - "How AI Changed His Job"
+
 
 ### **Professional Recognition**
 💎 **DZone Core MVP Blogger**  
 ☁️ **Top 4 Cloud Computing Expert** (DZone)  
 🔬 **IEEE Senior Member**
-
+📰 
 ---
 
 ## **🤝 PROFESSIONAL MEMBERSHIPS & AFFILIATIONS**
