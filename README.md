@@ -121,7 +121,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 📖 **"Harnessing the potential of AI applications in Education: Opportunities, challenges, and future directions"**  
 *Magna Scientia Advanced Research and Reviews* (2024) | DOI: 10.30574/msarr.2024.11.2.0139
 
-📖 **"From Code to Cure: The Impact of Artificial Intelligence in Pharma"**  
+📖 **"From Code to Cure: The Impact of Artificial Intelligence "**  
 *Convergence of Technology & Biology ─ Transforming Life Sciences* (Book Chapter, 2025)
 
 📊 **7 additional peer-reviewed research papers** published in international journals  
