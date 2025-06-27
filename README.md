@@ -247,13 +247,12 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 
 🔬 **IEEE Senior Member**  
 📊 **Editorial Board Member** - Science Research Journal (SCI indexed)  
-🎓 **SCRS Fellowship**  
 💎 **Perplexity AI Business Fellowship** 
 🧠 **Redgate Community Ambassador** 
 🏅 **Docker Captain**
 📚 **Hackathon Raptors Fellowship** 
-💡 **Threws Fellowship** (awaiting)
 💻 **BCS Applied** (awaiting response)
+🎓 
 
 ---
 
