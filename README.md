@@ -226,7 +226,9 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 ### **Microsoft Internal Awards**
 ⭐ **Star Award** for Excellent Performer  
 🚀 **Technovation Award** (from Chief Technology Officer)  
-🎯 **Delivery Excellence Award** | **BIG Team Award** | **Dream Team Award**
+🎯 **Delivery Excellence Award**
+🎓 **BIG Team Award** | **Dream Team Award** 
+📊 **Quality & Security Excellence Award**
 💡 [**Top 4 Cloud Computing Expert in DZone**](https://dzone.com/cloud-architecture)
 
 ### **Industry Recognition**
