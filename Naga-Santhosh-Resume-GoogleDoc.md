@@ -67,7 +67,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 📊 **Implemented end-to-end telemetry** using Application Insights for complete exception tracking and usage analytics  
 🔄 **Owned entire sustained engineering** for previous versions (2016/2014), managing complete RFC to release cycle
 
-### **Software Engineer - SQL Server Integration Services (SSIS)** | *Microsoft Corporation* | *Hyderabad, India*
+### **Software Engineer - SQL Server Integration Services (SSIS)** | *Microsoft Corporation* | *Shanghai, China*
 **September 2015 - June 2016**
 
 🛠️ **Implemented customized logging level feature** in SQL Server Management Studio (SSMS)  
