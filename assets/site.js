@@ -114,6 +114,9 @@ function extractPlatformLinks(markdown) {
     linkedin: null,
     github: null,
     sessionize: null,
+    dzone: null,
+    scholar: null,
+    adplist: null,
   };
 
   const linkRegex = /\[[^\]]+\]\((https?:\/\/[^)]+)\)/g;
@@ -124,6 +127,9 @@ function extractPlatformLinks(markdown) {
     if (!found.linkedin && (u.includes('linkedin.com/in/') || u.includes('linkedin.com'))) found.linkedin = url;
     if (!found.github && (u.includes('github.com/'))) found.github = url;
     if (!found.sessionize && (u.includes('sessionize.com/'))) found.sessionize = url;
+    if (!found.dzone && (u.includes('dzone.com/'))) found.dzone = url;
+    if (!found.scholar && (u.includes('scholar.google.'))) found.scholar = url;
+    if (!found.adplist && (u.includes('adplist.org/'))) found.adplist = url;
     if (found.linkedin && found.github && found.sessionize) break;
   }
 
@@ -315,11 +321,11 @@ function makeCollapsibleSections(articleRoot) {
   window.addEventListener('hashchange', applyInitialHashOpen);
 }
 
-function renderSidebar({ name, role, chips, links }) {
+function renderSidebar({ name, role, chips }) {
   const profileName = document.getElementById('profileName');
   const profileTitle = document.getElementById('profileTitle');
   const chipsRoot = document.getElementById('profileChips');
-  const linksRoot = document.getElementById('profileLinks');
+  const socialRoot = document.getElementById('profileSocial');
 
   profileName.textContent = name || 'Resume';
   profileTitle.textContent = role || '';
@@ -332,26 +338,59 @@ function renderSidebar({ name, role, chips, links }) {
     chipsRoot.appendChild(chip);
   }
 
-  // Sidebar link list removed in favor of clean topbar icons.
-  linksRoot.innerHTML = '';
+  if (socialRoot) socialRoot.innerHTML = '';
 }
 
-function renderTopbarLinks(platformLinks) {
-  const map = [
-    { key: 'linkedin', el: document.getElementById('linkLinkedIn') },
-    { key: 'github', el: document.getElementById('linkGitHub') },
-    { key: 'sessionize', el: document.getElementById('linkSessionize') },
+function renderProfileSocial(platformLinks) {
+  const root = document.getElementById('profileSocial');
+  if (!root) return;
+  root.innerHTML = '';
+
+  const items = [
+    {
+      key: 'linkedin',
+      label: 'LinkedIn',
+      svg: '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>',
+    },
+    {
+      key: 'github',
+      label: 'GitHub',
+      svg: '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>',
+    },
+    {
+      key: 'sessionize',
+      label: 'Sessionize',
+      svg: '<path d="M3 7h18"></path><path d="M7 3v4"></path><path d="M17 3v4"></path><rect x="3" y="7" width="18" height="14" rx="2"></rect><path d="M8 11h4"></path><path d="M8 15h6"></path>',
+    },
+    {
+      key: 'dzone',
+      label: 'DZone',
+      svg: '<path d="M12 2l9 4.5v11L12 22 3 17.5v-11L12 2z"></path><path d="M12 22V12"></path><path d="M21 6.5l-9 5-9-5"></path>',
+    },
+    {
+      key: 'scholar',
+      label: 'Google Scholar',
+      svg: '<path d="M22 10l-10 5L2 10l10-5 10 5z"></path><path d="M6 12v5c0 2.5 12 2.5 12 0v-5"></path>',
+    },
+    {
+      key: 'adplist',
+      label: 'ADPList',
+      svg: '<path d="M16 11c1.66 0 3-1.34 3-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3z"></path><path d="M8 11c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3z"></path><path d="M8 13c-2.76 0-5 1.79-5 4v2h10v-2c0-2.21-2.24-4-5-4z"></path><path d="M16 13c-1.05 0-2.02.26-2.82.7 1.75.94 2.82 2.46 2.82 4.3v1h6v-1c0-2.21-2.24-4-6-4z"></path>',
+    },
   ];
 
-  for (const item of map) {
+  for (const item of items) {
     const url = platformLinks[item.key];
-    if (!item.el) continue;
-    if (!url) {
-      item.el.style.display = 'none';
-      continue;
-    }
-    item.el.href = url;
-    item.el.style.display = '';
+    if (!url) continue;
+    const a = document.createElement('a');
+    a.className = 'iconlink';
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.setAttribute('aria-label', item.label);
+    a.title = item.label;
+    a.innerHTML = `<svg class="iconlink__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${item.svg}</svg>`;
+    root.appendChild(a);
   }
 }
 
@@ -430,13 +469,12 @@ async function main() {
 
   const { name, role, body } = splitHeader(text);
   const chips = extractChips(text);
-  const links = extractQuickLinks(text);
   const platformLinks = extractPlatformLinks(text);
 
   renderTopbar({ name, role });
   renderHero({ name, role, source });
-  renderSidebar({ name, role, chips, links });
-  renderTopbarLinks(platformLinks);
+  renderSidebar({ name, role, chips });
+  renderProfileSocial(platformLinks);
 
   const { headings } = configureMarked();
 
