@@ -133,7 +133,8 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 
 ### **Primary Author**
 📕 [**"Exploring Azure Container Apps: Scaling Modern and Cloud-Native Applications"**](https://link.springer.com/book/9798868814853) | *Apress* (2025)  
-📗 **"Building Cloud-Native Applications with .NET Aspire"** | *BPB Publications* (Expected June 2025)
+📗 [**"Building Cloud-Native Applications with .NET Aspire"**](https://bpbonline.com/products/introduction-to-net-aspire) | *BPB Publications*  
+📘 [**"Vibe Coding with GitHub Copilot"**](https://link.springer.com/book/10.1007/979-8-8688-2196-7) | *Apress*
 
 ### **Technical Reviewer & Editor**
 
@@ -292,7 +293,7 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 ✅ **17+ years** of progressive leadership at Microsoft  
 📊 **Millions of users** impacted through Azure SQL Database innovations  
 📚 **7 published research papers** + 3 under review  
-📖 **2 books authored** + 12 books technically reviewed  
+📖 **3 books authored** + 12 books technically reviewed  
 ✍️ **27 technical articles** with 124K+ pageviews  
 🎤 **15+ conference presentations** as invited speaker  
 ⚖️ **6+ hackathons judged** at enterprise level  
