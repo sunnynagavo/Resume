@@ -181,8 +181,9 @@ Accomplished Principal Software Engineering Manager with **17+ years** of progre
 ## **✍️ TECHNICAL ARTICLES & THOUGHT LEADERSHIP**
 
 ### **DZone Core MVP Blogger**
-📊 **27 published articles** with **124,300+ pageviews**  
+📊 **33 published articles** with **175,300+ pageviews**  
 🏆 **Top 4 expert** in cloud computing out of **million developers**  
+🏆 **Top 3 expert** in Containers out of **million developers** 
 📝 **Notable Articles:**
         - "Embracing Responsible AI: Principles and Practices" (June 2024)
         - "Building AI-Driven Intelligent Applications" (March 2025)
