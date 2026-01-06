@@ -130,7 +130,7 @@ function extractPlatformLinks(markdown) {
     if (!found.dzone && (u.includes('dzone.com/'))) found.dzone = url;
     if (!found.scholar && (u.includes('scholar.google.'))) found.scholar = url;
     if (!found.adplist && (u.includes('adplist.org/'))) found.adplist = url;
-    if (found.linkedin && found.github && found.sessionize) break;
+    if (found.linkedin && found.github && found.sessionize && found.dzone && found.scholar && found.adplist) break;
   }
 
   return found;
