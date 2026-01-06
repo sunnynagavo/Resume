@@ -95,6 +95,27 @@ body{
 
 .topbar__actions{display:flex;align-items:center;gap:10px}
 
+.topbar__links{display:flex;align-items:center;gap:8px}
+.navlink{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 10px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:linear-gradient(180deg, var(--surface), var(--surface2));
+  text-decoration:none;
+  color:var(--text);
+  font-weight:800;
+  font-size:13px;
+  white-space:nowrap;
+  transition:transform .12s ease, border-color .12s ease;
+}
+.navlink:hover{transform:translateY(-1px);border-color:rgba(37,99,235,.40)}
+.navlink:active{transform:translateY(0)}
+.navlink__icon{width:18px;height:18px;opacity:.9}
+.navlink__label{line-height:1}
+
 .button{
   appearance:none;
   border:1px solid var(--border);
@@ -343,6 +364,7 @@ details.resume-section[open] > .resume-section__summary::after{content:"▾"}
   .hero__title{font-size:24px}
   .button{width:100%;text-align:center}
   .topbar__actions{flex-wrap:wrap;justify-content:flex-end}
+  .topbar__links{width:100%;justify-content:flex-end;flex-wrap:wrap}
 }
 
 /* Print */

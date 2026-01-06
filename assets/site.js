@@ -109,6 +109,27 @@ function extractQuickLinks(markdown) {
   return unique;
 }
 
+function extractPlatformLinks(markdown) {
+  const found = {
+    linkedin: null,
+    github: null,
+    sessionize: null,
+  };
+
+  const linkRegex = /\[[^\]]+\]\((https?:\/\/[^)]+)\)/g;
+  let match;
+  while ((match = linkRegex.exec(markdown)) !== null) {
+    const url = match[1].trim();
+    const u = url.toLowerCase();
+    if (!found.linkedin && (u.includes('linkedin.com/in/') || u.includes('linkedin.com'))) found.linkedin = url;
+    if (!found.github && (u.includes('github.com/'))) found.github = url;
+    if (!found.sessionize && (u.includes('sessionize.com/'))) found.sessionize = url;
+    if (found.linkedin && found.github && found.sessionize) break;
+  }
+
+  return found;
+}
+
 function extractChips(markdown) {
   const chips = [];
 
@@ -311,32 +332,26 @@ function renderSidebar({ name, role, chips, links }) {
     chipsRoot.appendChild(chip);
   }
 
+  // Sidebar link list removed in favor of clean topbar icons.
   linksRoot.innerHTML = '';
-  for (const link of links) {
-    const a = document.createElement('a');
-    a.className = 'quicklink';
-    a.href = link.url;
-    a.target = '_blank';
-    a.rel = 'noopener';
+}
 
-    const left = document.createElement('div');
-    const label = document.createElement('div');
-    label.className = 'quicklink__label';
-    label.textContent = link.label;
-    const hint = document.createElement('div');
-    hint.className = 'quicklink__hint';
-    hint.textContent = new URL(link.url).hostname.replace(/^www\./, '');
+function renderTopbarLinks(platformLinks) {
+  const map = [
+    { key: 'linkedin', el: document.getElementById('linkLinkedIn') },
+    { key: 'github', el: document.getElementById('linkGitHub') },
+    { key: 'sessionize', el: document.getElementById('linkSessionize') },
+  ];
 
-    left.appendChild(label);
-    left.appendChild(hint);
-
-    const arrow = document.createElement('div');
-    arrow.className = 'quicklink__hint';
-    arrow.textContent = '↗';
-
-    a.appendChild(left);
-    a.appendChild(arrow);
-    linksRoot.appendChild(a);
+  for (const item of map) {
+    const url = platformLinks[item.key];
+    if (!item.el) continue;
+    if (!url) {
+      item.el.style.display = 'none';
+      continue;
+    }
+    item.el.href = url;
+    item.el.style.display = '';
   }
 }
 
@@ -416,10 +431,12 @@ async function main() {
   const { name, role, body } = splitHeader(text);
   const chips = extractChips(text);
   const links = extractQuickLinks(text);
+  const platformLinks = extractPlatformLinks(text);
 
   renderTopbar({ name, role });
   renderHero({ name, role, source });
   renderSidebar({ name, role, chips, links });
+  renderTopbarLinks(platformLinks);
 
   const { headings } = configureMarked();
 
