@@ -3,181 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naga Santhosh Reddy Vootukuri - Resume</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            color: #24292e;
-            background: #fff;
-        }
-        .header-flex {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            margin-bottom: 1.5em;
-            gap: 3em;
-        }
-        .main-content {
-            flex: 1;
-            min-width: 0;
-            max-width: calc(100% - 180px);
-        }
-        .name-title {
-            margin: 0;
-            padding: 0;
-        }
-        .name {
-            margin: 0;
-            padding: 0;
-            border: none;
-            font-size: 2.2em;
-            font-weight: 700;
-            color: #24292e;
-            line-height: 1.2;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .title {
-            margin: 0.3em 0 0 0;
-            padding: 0;
-            border: none;
-            color: #586069;
-            font-size: 1.5em;
-            font-weight: 400;
-            line-height: 1.4;
-        }
-        .title-separator {
-            height: 2px;
-            background: #0366d6;
-            margin: 0.3em 0;
-            width: 100%;
-            border: none;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-            flex-shrink: 0;
-            margin-top: 0.5em;
-        }
-        h3 {
-            color: #24292e;
-            border-bottom: 1px solid #eaecef;
-            padding-bottom: 0.3em;
-        }
-        a { 
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background-color: #eaecef;
-            margin: 24px 0;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        @media (max-width: 768px) {
-            .header-flex {
-                flex-direction: column;
-                align-items: center;
-                gap: 1em;
-            }
-            .main-content {
-                max-width: 100%;
-            }
-            .name, .title {
-                text-align: center;
-            }
-            .profile-pic {
-                margin-top: 1em;
-                width: 130px;
-                height: 130px;
-            }
-        }
-    </style>
+    <title>Resume | Naga Santhosh Reddy Vootukuri</title>
+    <meta name="description" content="Resume website for Naga Santhosh Reddy Vootukuri." />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
-    <div id="content">
-        <!-- Content will be loaded here -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar" role="banner">
+        <div class="topbar__inner">
+            <div class="brand">
+                <div class="brand__name" id="brandName">Resume</div>
+                <div class="brand__role" id="brandRole">Loading…</div>
+            </div>
+            <div class="topbar__actions">
+                <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+                    <span class="icon" aria-hidden="true">◐</span>
+                </button>
+                <button class="button" id="printButton" type="button" title="Print / Save as PDF">Print / PDF</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="shell">
+        <aside class="sidebar" aria-label="Resume sidebar">
+            <div class="card profile">
+                <img class="profile__photo" src="assets/profilepic.jpeg" alt="Profile photo" />
+                <div class="profile__meta">
+                    <div class="profile__name" id="profileName">Loading…</div>
+                    <div class="profile__title" id="profileTitle"></div>
+                </div>
+                <div class="profile__chips" id="profileChips"></div>
+                <div class="profile__links" id="profileLinks"></div>
+            </div>
+
+            <div class="card toc">
+                <div class="card__title">Contents</div>
+                <nav id="toc" class="toc__list" aria-label="Table of contents"></nav>
+            </div>
+        </aside>
+
+        <main id="main" class="content" role="main">
+            <div class="card hero">
+                <div class="hero__kicker">January 2026</div>
+                <h1 class="hero__title" id="heroTitle">Loading resume…</h1>
+                <p class="hero__subtitle" id="heroSubtitle">Rendering from Markdown</p>
+                <div class="hero__actions">
+                    <a class="button button--secondary" id="sourceLink" href="README.md" target="_blank" rel="noopener">View Markdown</a>
+                    <a class="button" href="#contentStart">Jump to resume</a>
+                </div>
+            </div>
+
+            <div id="contentStart"></div>
+            <article class="card article" id="article" aria-label="Resume content">
+                <div class="article__loading">Loading…</div>
+            </article>
+        </main>
     </div>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <span>Built with HTML/CSS/JS • Hosted on GitHub Pages</span>
+            <span class="footer__right">Tip: use Print/PDF for a one-page export.</span>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        fetch('README.md')
-            .then(response => response.text())
-            .then(text => {
-                // Get the first two headings (name and title)
-                const lines = text.split('\n');
-                let h1 = '', h2 = '', rest = [];
-                let foundH1 = false, foundH2 = false;
-                
-                for (let i = 0; i < lines.length; i++) {
-                    if (!foundH1 && lines[i].startsWith('# ')) {
-                        h1 = lines[i].replace(/^# \*\*|\*\*$/g, '');
-                        foundH1 = true;
-                        continue;
-                    }
-                    if (foundH1 && !foundH2 && lines[i].startsWith('## ')) {
-                        h2 = lines[i].replace(/^## /, '');
-                        foundH2 = true;
-                        continue;
-                    }
-                    if (foundH1 && foundH2) {
-                        rest = lines.slice(i);
-                        break;
-                    }
-                }
-
-                // Create the header with flex layout
-                const header = document.createElement('div');
-                header.className = 'header-flex';
-
-                const mainContent = document.createElement('div');
-                mainContent.className = 'main-content';
-
-                const nameTitle = document.createElement('div');
-                nameTitle.className = 'name-title';
-
-                const name = document.createElement('div');
-                name.className = 'name';
-                name.textContent = h1;
-
-                const separator = document.createElement('div');
-                separator.className = 'title-separator';
-
-                const title = document.createElement('div');
-                title.className = 'title';
-                title.textContent = h2;
-
-                nameTitle.appendChild(name);
-                nameTitle.appendChild(separator);
-                nameTitle.appendChild(title);
-                mainContent.appendChild(nameTitle);
-
-                const img = document.createElement('img');
-                img.src = 'assets/profilepic.jpeg';
-                img.className = 'profile-pic';
-                img.alt = 'Naga Santhosh Reddy Vootukuri';
-
-                header.appendChild(mainContent);
-                header.appendChild(img);
-
-                // Render the header and rest of the content
-                const contentDiv = document.getElementById('content');
-                contentDiv.appendChild(header);
-                contentDiv.innerHTML += marked.parse(rest.join('\n'));
-            });
-    </script>
+    <script src="assets/site.js"></script>
 </body>
 </html>
