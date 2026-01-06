@@ -72,6 +72,23 @@ function splitHeader(markdown) {
   return { name, role, body };
 }
 
+function stripTopContactBlock(markdownBody) {
+  const lines = markdownBody.replace(/\r\n/g, '\n').split('\n');
+  const isRule = (line) => /^---\s*$/.test(line.trim());
+
+  const firstRule = lines.findIndex((l) => isRule(l));
+  if (firstRule === -1) return markdownBody;
+
+  const secondRule = lines.findIndex((l, idx) => idx > firstRule && isRule(l));
+  if (secondRule === -1) return markdownBody;
+
+  // Only strip if it's likely the short contact header block
+  if (secondRule - firstRule > 40) return markdownBody;
+
+  const kept = [...lines.slice(0, firstRule), ...lines.slice(secondRule + 1)];
+  return kept.join('\n').replace(/^\s+/, '').trim();
+}
+
 function extractQuickLinks(markdown) {
   const links = [];
 
@@ -468,6 +485,7 @@ async function main() {
   const { source, text } = await fetchFirstAvailable(forced ? [forced, ...DEFAULT_SOURCES] : DEFAULT_SOURCES);
 
   const { name, role, body } = splitHeader(text);
+  const bodyWithoutContact = stripTopContactBlock(body);
   const chips = extractChips(text);
   const platformLinks = extractPlatformLinks(text);
 
@@ -479,7 +497,7 @@ async function main() {
   const { headings } = configureMarked();
 
   const article = document.getElementById('article');
-  const html = marked.parse(body);
+  const html = marked.parse(bodyWithoutContact);
   article.innerHTML = html;
 
   makeCollapsibleSections(article);
