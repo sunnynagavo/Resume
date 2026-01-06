@@ -293,7 +293,7 @@ function makeCollapsibleSections(articleRoot) {
       // Start a new collapsible section
       currentDetails = document.createElement('details');
       currentDetails.className = 'resume-section';
-      currentDetails.open = true;
+      currentDetails.open = false;
 
       const summary = document.createElement('summary');
       summary.className = 'resume-section__summary';
